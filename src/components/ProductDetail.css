@@ -1,0 +1,124 @@
+.tc {
+    font-size: 16px;
+line-height: 29px;
+
+
+
+color: #A9ACC6;
+
+}
+.cr h4 {
+    font-size: 16px;
+line-height: 19px;
+text-align: left;
+
+color: #0D134E;
+}
+.cr3 h4 {
+    font-size: 16px;
+line-height: 19px;
+text-align: right;
+
+color: #0D134E;
+}
+.cr1 h4 {
+    font-size: 16px;
+line-height: 19px;
+text-align: left;
+
+color: #FB2E86;
+}
+
+.tsit1 h4 {
+    font-size: 36px;
+line-height: 42px;
+text-align: left;
+
+color: #0D134E;
+}
+
+.t-word1 h4 {
+    font-size: 16px;
+line-height: 29px;
+color: #A9ACC6;
+text-align: left;
+}
+
+.desc {
+    font-size: 24px;
+line-height: 28px;
+text-decoration-line: underline;
+
+
+
+color: #151875;
+}
+.af{
+    font-size: 24px;
+line-height: 28px;
+
+/* Text */
+
+color: #151875;
+}
+.af1{
+    font-size: 24px;
+line-height: 28px;
+
+/* Text */
+text-align: left;
+color: #151875;
+}
+.af2{
+    font-size: 16px;
+line-height: 29px;
+/* or 181% */
+text-align: left;
+
+color: #A9ACC6;
+}
+
+.beck {
+background-color: #F9F8FE !important;
+}
+
+.mfw {
+    font-size: 16px;
+line-height: 19px;
+color: #151875;
+text-align: left;
+}
+.mfw1 {
+    font-size: 13px;
+line-height: 15px;
+
+text-align: left;
+
+color: #151875;
+}
+
+.rp {
+    font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+text-align: left;
+
+color: #101750;
+
+}
+
+.rp-img {
+    width: 270px;
+height: 340px;
+}
+
+.rp-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.rps {
+    display: flex;
+    flex-wrap: wrap;
+}

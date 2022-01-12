@@ -1,0 +1,61 @@
+body.html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+.btn-color {
+  background-color: #fb2e86;
+}
+.ci {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #8a8fb9;
+}
+
+.kont {
+  padding: 50px;
+  background-color: #eeeffb;
+}
+
+.hek {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.cd {
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.ld {
+  background-color: #e7e4f8;
+}
+
+.ld1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #9da0ae;
+}
+
+#footer-img img {
+    width: 100%;
+
+
+}
+

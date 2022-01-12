@@ -1,0 +1,46 @@
+.grid_parent {
+
+    width: 100%;
+    /* background-color: #F6F5FF; */
+    background-color: #F6F5FF;
+    padding: 20px;
+    margin: 40px auto;
+    
+}
+
+
+.def {
+   
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    
+    color: #101750;
+    
+}
+
+.pag {
+    
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #000000;
+
+}
+
+.fau {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* pink */
+
+color: #FB2E86;
+}

@@ -1,0 +1,75 @@
+.grid-img {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   
+   .grid-img img {
+       height: 100%;
+       width: 100%;
+   }
+ 
+   .list-img-section {
+       justify-content: center;
+       align-items: center;
+   }
+ .grid-icon {
+     height: 10px;
+     width: 10px;
+     border: 1px solid black;
+     border-radius: 100%;
+   }
+ 
+   .grid-icon1 {
+     background-color: #de9034;
+   }
+   .grid-icon2 {
+     background-color: #ec42a2;
+   }
+ 
+   .grid-icon3 {
+     background-color: #8568ff;
+   }
+ 
+   .grid-price h4 {
+     font-size: 14px;
+     line-height: 16px;
+     text-align: center;
+     color: #151875;
+   }
+   .grid-discount h4 {
+     font-size: 14px;
+     line-height: 16px;
+     text-align: center;
+     text-decoration-line: line-through;
+     color: #fb2e86;
+   }
+ 
+ .tsit {
+     font-style: normal;
+ font-weight: 900;
+ font-size: 19.8783px;
+ line-height: 23px;
+ 
+ color: #111C85;
+ }
+ 
+ .t-word h4 {
+     font-style: normal;
+ font-weight: normal;
+ font-size: 17.6696px;
+ line-height: 31px;
+ /* or 175% */
+ 
+ 
+ color: #9295AA;
+ }
+ 
+ .s-color {
+     color: yellow;
+ }
+ 
+ .dont {
+     box-shadow: 5px 5px 5px 5px lightgray;
+     margin: 20px 0;
+ }

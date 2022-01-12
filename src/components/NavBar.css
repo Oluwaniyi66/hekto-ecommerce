@@ -1,0 +1,67 @@
+body.html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.fasit {
+
+    background-color: red !important;
+    border: 0;
+    margin: 0;
+}
+.fm {
+    margin-right: 0 !important;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.hm {
+    color: brown !important;
+}
+
+.topnav_parent {
+    display: flex;
+   
+    color: #ffffff;
+}
+
+.topnav_child1 {
+    display: flex;
+    list-style: none;
+    
+}
+.topnav_child2 {
+    display: flex;
+    list-style: none;
+}
+
+.top_navbar {
+    background-color: #7E33E0 !important;
+    
+    width: 100%;
+}
+
+.link1 {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.nav1 {
+    background-color: #ffffff ;
+}
+
+.hek {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    color:  #0D0E43;
+    
+}
+
+.hm1 {
+    font-size: 16px;
+    font-weight: 400;
+}

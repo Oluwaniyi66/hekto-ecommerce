@@ -1,0 +1,108 @@
+
+
+.grid_child2{
+
+    display: flex;
+  gap: 5px;  
+}
+
+
+
+.grid_child3A {
+    display: flex;
+}
+
+.grid_son {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 78%;
+}
+.shop-grid{
+    text-align: initial;
+    color: #101750;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.ecom {
+    
+font-size: 22px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color: #151875;
+}
+
+.ecop {
+  
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.child {
+    font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.match {
+    
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.rowA {
+
+    left: 55.55%;
+right: 11.11%;
+top: 55.56%;
+bottom: 11.11%;
+
+/* Text */
+
+color : #151875;
+}
+
+.inp {
+    left: 54.91%;
+right: 40.39%;
+top: 79.55%;
+bottom: -36.36%;
+
+border: 1px solid #E7E6EF;
+box-sizing: border-box;
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.inp1 {
+    left: 67.38%;
+right: 24.42%;
+top: 86.36%;
+bottom: -50%;
+
+border: 1px solid #E7E6EF;
+box-sizing: border-box;
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.out {
+    margin-bottom: 60px ;
+}
