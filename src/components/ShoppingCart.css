@@ -1,0 +1,124 @@
+.q-col {
+    background-color: #BEBFC2;
+    
+}
+
+.q-col h4 {
+    font-size: 12px;
+line-height: 14px;
+}
+
+.scp {
+    font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 23px;
+
+color: #1D3178;
+text-align: left;
+}
+.scp1 {
+    font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 23px;
+
+color: #1D3178;
+
+}
+.utc {
+    font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+text-align: left;
+
+}
+
+.ccr {
+    font-size: 12px;
+line-height: 14px;
+
+color: #A1A8C1;
+}
+.ccb {
+    font-size: 14px;
+line-height: 16px;
+
+color: #A1A8C1;
+
+}
+
+.prct {
+    font-size: 14px;
+line-height: 16px;
+
+color: #15245E;
+}
+
+.q-h4 {
+    font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+} 
+
+.ctss {
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+text-align: left;
+
+color: #1D3178;
+
+}
+
+.ctrs {
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: right;
+color: #15245E;
+}
+
+.cart-body {
+    background-color: #F4F4FC;
+border-radius: 3px;
+}
+
+.stcc {
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: #19D16F;
+}
+
+.stcc1 h4 {
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: #8A91AB;
+
+}
+
+.pts {
+    background: #19D16F;
+    border-radius: 3px
+}
+.ctss5 {
+    font-size: 14px;
+line-height: 16px;
+text-align: left;
+color: #C5CBE3;
+}
+
+.pts1 {
+    background: #FB2E86;
+    color: #ffffff;
+border-radius: 2px;
+}
