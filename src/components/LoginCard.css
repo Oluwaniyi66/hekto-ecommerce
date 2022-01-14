@@ -1,0 +1,52 @@
+.myCard {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+box-shadow: 0px 0px 25px 10px #F8F8FB;
+border: none;
+}
+
+.log-head {
+
+    font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 37px;
+text-align: center;
+color: #000000;
+}
+
+.log-head1 {
+
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #9096B2;
+
+}
+.log-head1 a {
+    text-decoration: none;
+}
+
+.log-head2 {
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #9096B2;
+}
+
+.log-bt {
+    background-color: #FB2E86;
+border-radius: 3px;
+color: #FFFFFF;
+}
+
+.log-inp {
+    background-color: #FFFFFF;
+border: 1px solid #C2C5E1;
+box-sizing: border-box;
+border-radius: 2px;
+}

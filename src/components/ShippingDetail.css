@@ -1,0 +1,54 @@
+.c-inf {
+    font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-align: left;
+
+
+color: #1D3178;
+}
+
+.ahaa h4,a {
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+
+
+
+letter-spacing: 0.01em;
+
+color: #C1C8E1;
+}
+.ahaa a {
+    text-decoration: none;
+    text-align: left;
+}
+
+.inpem {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-style: normal;
+    /* border-color: #C1C8E1; */
+
+
+
+}
+input {
+    color: #C1C8E1;
+    background-color: #F8F8FD;
+    border-bottom-color:#C1C8E1;
+}
+
+input::placeholder {
+    font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #C1C8E1;
+
+
+}
