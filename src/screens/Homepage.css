@@ -1,0 +1,21 @@
+.hm-nav-bg{
+    background-color: #F2F0FF;
+    padding: 25px;
+}
+.hm-nav-bg .hm-nav-img {
+    width: 387px;
+    height: 387px;
+
+}
+
+.hm-nav-img img {
+    width: 50%;
+    height: 100%;
+}
+
+.hm-nav-text4 h6 {
+    font-weight: 700; 
+    font-size: 16px;
+    color: #8A8FB9 ;
+    text-align: left;
+}
