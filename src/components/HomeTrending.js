@@ -6,7 +6,7 @@ function HomeTrending({trending}) {
         <div className="col-lg-11 htg">
 
             <div className='htg-img ms-2 my-2'>
-                <img src={trending.image} alt="" />
+                <img src={`http://127.0.0.1:8000/images/${trending.p_image}`} alt="" />
             </div>
 
         </div>

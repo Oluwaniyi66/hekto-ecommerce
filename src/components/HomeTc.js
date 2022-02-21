@@ -5,7 +5,7 @@ function HomeTc({tp}) {
     <div className='col-lg-12 me-3 tc-box'>
         <div className='tc-image'>
             <div className='tc-img'>
-                <img src={tp.image} alt="" />
+                <img src={`http://127.0.0.1:8000/images/${tp.p_image}`} alt="" />
             </div>
         </div>
 

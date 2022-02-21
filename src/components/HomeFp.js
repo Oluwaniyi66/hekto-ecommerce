@@ -6,7 +6,7 @@ function HomeFp({item}) {
       
       <div className="col-lg-12 hm-fp-img">
         <div className="hm-fp-img-sm">
-          <img src={item.image} alt="" />
+          <img src={`http://127.0.0.1:8000/images/${item.p_image}`} alt="" />
         </div>
       </div>
       <div>

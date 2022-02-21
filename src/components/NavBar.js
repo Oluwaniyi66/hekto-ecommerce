@@ -1,7 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
+import { useCart } from 'react-use-cart';
+
+
 
 function NavBar() {
+
+  const { totalItems } = useCart()
+  
+
+  const cartNumber = JSON.parse(localStorage.getItem('react-use-cart'))
+    // console.log('my cart no',cartNumber.items.length)
   return (
     <div className="">
       <nav className="top_navbar">
@@ -78,7 +88,13 @@ function NavBar() {
             </li>
             <li className="nav-item ">
               <a className="nav-link link1 " href="#">
-              <i class="fas fa-shopping-cart"></i>
+               
+               <Link to='/cart'>
+               
+              <i class="fas fa-shopping-cart"></i> <sup>
+              { totalItems  }
+              </sup>
+               </Link>
               
               </a>
             </li>

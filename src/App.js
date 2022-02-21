@@ -12,10 +12,21 @@ import Login from './screens/Login';
 import Register from './screens/Register';
 import OrderCompleted from './screens/OrderCompleted';
 import Homepage from './screens/Homepage';
+import HektoContextProvider from './screens/HektoContext';
+import { CartProvider } from 'react-use-cart';
+// import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="App">
+
+      <ToastContainer/>
+      <CartProvider>
+
+      <HektoContextProvider>
+
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -23,7 +34,7 @@ function App() {
           <Route path="/grid" element={<Grid />} />
           <Route path="/list" element={<List />} />
           <Route path="/left" element={<Left />} />
-          <Route path="/productdetail" element={<ProductsDetails />} />
+          <Route path="/productdetail/:id" element={<ProductsDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/ship" element={<Shipping />} />
           <Route path="/login" element={<Login />} />
@@ -32,6 +43,9 @@ function App() {
         </Routes>
 
       </BrowserRouter>
+      </HektoContextProvider>
+      </CartProvider>
+      {/* </ToastContainer> */}
     </div>
   );
 }

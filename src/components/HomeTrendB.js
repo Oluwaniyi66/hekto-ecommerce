@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { HektoContext } from "../screens/HektoContext";
 import HomeTrendSm from "./HomeTrendSm";
 
 function HomeTrendB() {
+  const storeContext = useContext(HektoContext)
+
+ const executive = storeContext[4]
     const trendSm = [
         {
             image : './seat.png',
@@ -49,7 +53,7 @@ function HomeTrendB() {
       </div>
       <div className="col-lg-12 htb-box2 mb-5 me-3">
           {
-              trendSm.map((small)=>(
+              executive.map((small)=>(
 
                   <HomeTrendSm small={small}/>
               ))

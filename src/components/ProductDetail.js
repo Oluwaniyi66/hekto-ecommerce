@@ -1,8 +1,32 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { useParams } from 'react-router-dom'
+import { useCart } from 'react-use-cart'
+import { HektoContext } from '../screens/HektoContext'
 import "./ProductDetail.css"
 import RelatedProduct from './RelatedProduct'
 
 function ProductDetail() {
+const storeContext = useContext(HektoContext)
+const { id } = useParams()
+console.log('id', id)
+console.log('jtjjtj')
+
+
+ const Product = storeContext[14]
+ //  console.log(Product)
+ const singleProduct = storeContext[16]
+ 
+ const {addItem} = useCart();
+ const { updateItem } = useCart();
+ const { removeItem } = useCart();
+
+
+ 
+
+ React.useEffect(() => {
+    singleProduct(id)
+ }, [id])
+ 
 
     //     'image1':'',image2,image3,Image,name,rating,price,
     // discount,description, title,lg_description,sm_title,sm_description,rp_Image,rp_title,rp_price
@@ -51,16 +75,16 @@ function ProductDetail() {
                 <div className='card plc py-10 me-10 my-5'>
                     <div className='row mx-3 my-3'>
                         <div className='col-lg-2 pd-imgs-section'>
-                            <div className='my-2 pd-img'> <img src="./Rectangle 134.png" alt="" /> </div>
-                            <div className='my-2 pd-img'> <img src="./Rectangle 136.png" alt="" /> </div>
-                            <div className='pd-img'> <img src="./Rectangle 137.png" alt="" /> </div>
+                            <div className='my-2 pd-img'> <img src={`http://127.0.0.1:8000/images/${Product.pd_img1}`} alt="" /> </div>
+                            <div className='my-2 pd-img'> <img src={`http://127.0.0.1:8000/images/${Product.pd_img2}`} alt="" /> </div>
+                            <div className='pd-img'> <img src={`http://127.0.0.1:8000/images/${Product.pd_img3}`} alt="" /> </div>
                         </div>
                         <div className='col-lg-5'>
-                            <div> <img src="./Rectangle 138.png" alt="" /> </div>
+                            <div> <img src={`http://127.0.0.1:8000/images/${Product.p_image}`} alt="" /> </div>
                         </div>
                         <div className='col-lg-5'>
                             <div>
-                                <div className='col-lg-10 tsit1'> <h4>Playwood arm chair</h4></div>
+                                <div className='col-lg-10 tsit1'> <h4>{Product.name}</h4></div>
                                 <div className='col-lg-8 row'>
 
                                     <div className='col-lg-1'>  <i class="fas fa-star"></i></div>
@@ -73,18 +97,19 @@ function ProductDetail() {
                                 </div>
                                 <div className='row '>
                                     <div className='col-lg-2 cr  grid-price'>
-                                        <h4>$32</h4>
+                                        <h4>${Product.discount}</h4>
                                     </div>
                                     <div className='col-lg-2 cr1 grid-discount'>
-                                        <h4>$45</h4>
+                                        <h4>${Product.price}</h4>
                                     </div>
                                 </div>
                                 <div className='col-lg-2 cr'> <h4>Color</h4></div>
-                                <div className='t-word1'><h4>This chair has no idea of bending or rotting and it's very strong</h4></div>
+                                <div className='t-word1'><h4>{Product.l_desc}</h4></div>
                                 <div>
                                     <div className='row'>
                                         <div className='col-lg-6 cr3'>
-                                            <h4>Add To cart</h4>
+                                            
+                                            <h4 className='btn btn-secondary' onClick={()=>(addItem(Product))}>Add To cart</h4>
 
                                         </div>
                                         <div className='col-lg-3'>
@@ -93,7 +118,15 @@ function ProductDetail() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-lg-3 cr'> <h4>Categories</h4></div>
+                                <div className='col-lg-3 cr d-flex justify-content-between'> 
+                                <h4 className='me-2'>Categories: 
+                                </h4>
+                                <h4>
+
+                                    {Product.p_category}
+                                </h4>
+                                
+                                </div>
                                 <div className='col-lg-2 cr'> <h4>Tags</h4></div>
                                 <div className='row'>
                                     <div className='col-lg-2 cr'> <h4>Share</h4></div>

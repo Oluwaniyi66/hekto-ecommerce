@@ -1,12 +1,20 @@
 import React from 'react'
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import Filter from '../components/Filter'
 import Footer from '../components/Footer'
 import FooterBottom from '../components/FooterBottom'
 import FooterImage from '../components/FooterImage'
 import Header from '../components/Header'
 import ListProducts from '../components/ListProducts'
+import { HektoContext } from './HektoContext'
 
 function List() {
+    const storeContext = useContext(HektoContext)
+
+ const products = storeContext[0]
+ const isloading = storeContext[2]
+console.log('my home context content', products)
     const listProducts = [
         {
         'id': '001',
@@ -82,16 +90,12 @@ function List() {
             <div className='container'>
                 <div className='row'>
                     {
-                        listProducts.map((item)=>
+                        products.map((item)=>
                         (
 
-                            <ListProducts
-                            id = {item.id}
-                            name = {item.name}
-                            price={item.price}
-                            discount={item.discount}
-                            image={item.image}
-                            description={item.description}
+                           
+                                <ListProducts
+                            item={item}
                             />
                         )
                         

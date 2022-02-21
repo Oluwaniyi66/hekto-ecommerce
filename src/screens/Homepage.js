@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Footer from "../components/Footer";
 import FooterBottom from "../components/FooterBottom";
 import FooterImage from "../components/FooterImage";
@@ -9,8 +9,12 @@ import HomeTc from "../components/HomeTc";
 import HomeTrendB from "../components/HomeTrendB";
 import HomeTrending from "../components/HomeTrending";
 import "./Homepage.css";
+import { HektoContext } from "./HektoContext";
+
 
 function Homepage() {
+
+
   const featureProduct = [
     {
       id: "001",
@@ -41,6 +45,18 @@ function Homepage() {
       image: "./chairone3.png",
     },
   ];
+
+const storeContext = useContext(HektoContext)
+
+ const featured = storeContext[4]
+ const top = storeContext[6]
+ const latest = storeContext[8]
+ const trending = storeContext[10]
+ const isloading = storeContext[2]
+console.log('my home featured context content', featured)
+console.log('my home top context content', top)
+
+
   const LatestProduct = [
     {
       id: "001",
@@ -145,7 +161,7 @@ function Homepage() {
       image: "./image 32.png",
     },
   ];
-  const top = [
+  const topA = [
     {
       id: "1",
       name: "Mini LCW Chair",
@@ -224,7 +240,7 @@ function Homepage() {
           <h1>Featured Products</h1>
         </div>
         <div className="d-flex flex-wrap">
-          {featureProduct.map((item) => (
+          {featured.map((item) => (
             <HomeFp item={item} />
           ))}
         </div>
@@ -255,7 +271,7 @@ function Homepage() {
           </div>
         </div>
         <div className="d-flex flex-wrap">
-          {LatestProduct.map((lp) => (
+          {latest.map((lp) => (
             <HomeLp lp={lp} />
           ))}
         </div>
@@ -321,7 +337,7 @@ function Homepage() {
           <h1>Trending Products</h1>
         </div>
         <div className="d-flex flex-wrap">
-          {hometrending.map((trending) => (
+          {trending.map((trending) => (
             <HomeTrending trending={trending} />
           ))}
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useContext } from 'react';
 import Filter from '../components/Filter';
 import Footer from '../components/Footer';
 import FooterBottom from '../components/FooterBottom';
@@ -7,8 +8,14 @@ import GridProduct from '../components/GridProduct';
 import Header from '../components/Header';
 
 import "./Grid.css";
+import { HektoContext } from './HektoContext';
 
 function Grid() {
+    const storeContext = useContext(HektoContext)
+
+ const products = storeContext[0]
+ const isloading = storeContext[2]
+console.log('my home context content', products)
 
     const gridProducts = [
         {
@@ -75,13 +82,9 @@ function Grid() {
             <div className='container'>
                 <div className='grid-products'>
                     {
-                            gridProducts.map((item) =>(
+                            products.map((item) =>(
                                 <GridProduct
-                                id = {item.id}
-                                name = {item.name}
-                                price = {item.price}
-                                discount = {item.discount}
-                                 image   = {item.image}
+                               item ={item}
                                 />
                             ))
                     }

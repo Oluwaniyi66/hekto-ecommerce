@@ -5,7 +5,7 @@ function HomeTrendSm({small}) {
     <div className='d-flex  mb-4'>
         <div className='htsm-image me-2'>
             <div className='htsm-img'>
-                <img src={small.image} alt="" />
+                <img src={`http://127.0.0.1:8000/images/${small.p_image}`} alt="" />
             </div>
         </div>
 

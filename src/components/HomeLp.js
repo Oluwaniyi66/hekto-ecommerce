@@ -5,7 +5,7 @@ function HomeLp({lp}) {
     <div className="col-lg-12 lp-box me-3 my-3">
       <div className="col-lg-12 hm-lp-img">
         <div className="hm-lp-img-child">
-          <img src={lp.image} alt="" />
+          <img src={`http://127.0.0.1:8000/images/${lp.p_image}`} alt="" />
         </div>
       </div>
       <div className="col-lg-12 d-flex mt-2">

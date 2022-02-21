@@ -13,8 +13,10 @@ function ProductsDetails() {
             <Header title="Product Details"/>
             <Filter/>
             
-                   <ProductDetail/>
-        
+                   <ProductDetail
+                   
+                   />
+       
             <FooterImage/>
             <Footer/>
             <FooterBottom/>
