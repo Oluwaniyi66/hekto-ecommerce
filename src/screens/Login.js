@@ -11,7 +11,6 @@ function Login() {
     return (
         <div>
             <Header title="My Account" />
-            <Filter />
             <div className='container'>
                 
                 <LoginCard/>

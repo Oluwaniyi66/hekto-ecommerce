@@ -8,6 +8,9 @@ function ListProducts({item}) {
     const storeContext = useContext(HektoContext)
  const Product = storeContext[14]
  const checkAndNotify = storeContext[17] 
+ const searchTerm = storeContext[18] 
+ const setSearchTerm = storeContext[19] 
+
     const { id } = useParams()
  const {addItem} = useCart();
  const { updateItem } = useCart();

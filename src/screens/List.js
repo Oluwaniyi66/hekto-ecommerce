@@ -14,6 +14,9 @@ function List() {
 
  const products = storeContext[0]
  const isloading = storeContext[2]
+
+ const searchTerm = storeContext[18] 
+ const setSearchTerm = storeContext[19]
 console.log('my home context content', products)
     const listProducts = [
         {
@@ -86,11 +89,18 @@ console.log('my home context content', products)
     return (
         <div>
             <Header title="Shop List"/>
-            <Filter/>
+            <Filter />
             <div className='container'>
                 <div className='row'>
                     {
-                        products.map((item)=>
+                        products.filter((item) => {
+                            console.log('my item', item)
+                            if(item.name.toLowerCase().includes(searchTerm.toLowerCase())){
+                                return item
+                            } else if ( searchTerm == ""){
+                                    return item
+                            }
+                        }).map((item)=>
                         (
 
                            

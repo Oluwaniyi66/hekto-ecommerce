@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import { useCart } from 'react-use-cart';
+import { HektoContext } from "../screens/HektoContext";
 
 
 
 function NavBar() {
+  // const handleChange = (e) => {
+  //   setShip({ ...ship, [e.target.name]: e.target.value });
+  //   console.log(ship);
+  // };
 
   const { totalItems } = useCart()
+
+  const storeContext = useContext(HektoContext)
+  const searchTerm = storeContext[18] 
+  const setSearchTerm = storeContext[19]
+
+  const handleChange = (e)=>{
+    setSearchTerm(e.target.value)
+  }
   
 
   const cartNumber = JSON.parse(localStorage.getItem('react-use-cart'))
@@ -76,7 +89,10 @@ function NavBar() {
             </li>
             <li className="nav-item ">
               <a className="nav-link link1" href="#">
+                <Link to={'/login'}>
                 Login
+                
+                </Link>
                 <i class="far fa-user"></i>
               </a>
             </li>
@@ -167,9 +183,10 @@ function NavBar() {
             <form className="d-flex">
               <input
                 className="form-control me-2 fm"
-                type="search"
-                placeholder="Search"
+                type="text"
+                placeholder="Search...."
                 aria-label="Search"
+                onChange={handleChange}
               />
               <button className=" fasit" type="submit">
                 <i class="fas fa-search"></i>

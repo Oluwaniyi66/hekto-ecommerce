@@ -11,7 +11,7 @@ function Register() {
     return (
         <div>
             <Header title="My Account" />
-            <Filter />
+            {/* <Filter /> */}
             <div className='container'>
                 
                 <RegCard/>

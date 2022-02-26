@@ -14,6 +14,7 @@ const HektoContextProvider = ({ children }) => {
   const [executive, setExecutive] = useState([]);
   const [isloading, setisloading] = useState(true);
   const {items, addItem} = useCart();
+  const [searchTerm, setSearchTerm] = useState('')
 
   const checkAndNotify = (product) => {
     console.log('hdhdhd',product)
@@ -37,7 +38,7 @@ const HektoContextProvider = ({ children }) => {
       .then((json) => {
         setProducts(json.products);
         setisloading(false);
-
+        localStorage.setItem("myProducts", JSON.stringify(json));
         console.log(json);
       });
   };
@@ -49,11 +50,27 @@ const HektoContextProvider = ({ children }) => {
       .then((json) => {
         setProduct(json.product);
         setisloading(false);
+        
 
         console.log('json',json);
       });
 
   }
+  // const singleUser = (user_id) => {
+  //   // const  user_id =  JSON.parse(localStorage.getItem('user-info')).id
+
+
+  //   fetch(`http://localhost:8000/api/get_user/${user_id}`)
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //         console.log('json',json);
+  //       // setProduct(json.product);
+  //       setisloading(false);
+
+  //     });
+
+  // }
+  
   //this is another get request and its collecting one arguement
 
   const getStatus = () => {
@@ -75,7 +92,8 @@ const HektoContextProvider = ({ children }) => {
   }, []);
 
   const bank = [products, setProducts, isloading, setisloading,featured, setFeatured,top, setTop,
-    latest, setLatest,trending, setTrending,executive, setExecutive,Product,setProduct,singleProduct,checkAndNotify];
+    latest, setLatest,trending, setTrending,executive, setExecutive,Product,setProduct,singleProduct,
+    checkAndNotify,searchTerm,setSearchTerm];
   return <HektoContext.Provider value={bank}>{children}</HektoContext.Provider>;
 };
 
